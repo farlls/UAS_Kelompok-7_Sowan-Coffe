@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.IO;
 
 namespace Sowan_Coffee
 {
@@ -27,6 +29,13 @@ namespace Sowan_Coffee
 
         private void BtnClickAtc(object sender, RoutedEventArgs e)
         {
+            SqlConnection db = new SqlConnection(@"Data Source=FARLLS\SQLEXPRESS;Initial Catalog=sowan_coffee_backup;Integrated Security=True");
+            db.Open();
+            using (SqlCommand command = new SqlCommand("SELECT deskripsi FROM [dbo].[MenuCoffee] WHERE ID_MenuCoffee = 'D0001'", db))
+            {
+                string Deslatte = (string)command.ExecuteScalar();
+                deslatte.Text = Deslatte;
+            }
             this.NavigationDeskripsiDrink.Navigate(new Uri("MyCart.xaml", UriKind.Relative));
         }
 

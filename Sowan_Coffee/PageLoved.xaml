@@ -45,7 +45,7 @@
             <Grid Width="181" Height="239" VerticalAlignment="Top" HorizontalAlignment="Left">
                 <Border Width="181" Height="239" Background="#FF202020" CornerRadius="20, 20, 20, 20"/>
                 <Grid Width="163" Margin="9,10,9,0" VerticalAlignment="Top">
-                    <Image Source="/img/Drink Image 1.png" ></Image><Image Source="/img/Icon Rating.png" Width="41" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="9,6,0,0"></Image>
+                    <Image x:Name="latteImg" Source="{Binding Path=latteImg}" ></Image><Image Source="/img/Icon Rating.png" Width="41" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="9,6,0,0"></Image>
                     <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="BtnClickDsk">
                         
                     </Button>
@@ -57,9 +57,9 @@
                 </Grid>
 
                 <TextBlock x:Name="latteart"  Foreground="#FFB87651" FontFamily="Mada" FontWeight="Medium" FontSize="20" Text="{Binding Path=LatteArt}" Margin="11,171,0,0" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80"/>
-                <TextBlock x:Name="deskripsi" Foreground="White" Width="72" Height="15" FontFamily="Poppins" Text="{Binding Path=Deskripsi}" FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,191,0,0" FontWeight="Light"></TextBlock>
-                <TextBlock Foreground="#FFB87651" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="IDR." Margin="12,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <TextBlock x:Name="harga" Foreground="White" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="19.000" Margin="39,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+                <TextBlock x:Name="deslatte" Foreground="White" Width="72" Height="15" FontFamily="Poppins" Text="{Binding Path=Deslatte}" FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,191,0,0" FontWeight="Light"></TextBlock>
+                <TextBlock Foreground="#FFB87651" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="IDR " Margin="12,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBlock x:Name="hglatte" Foreground="White" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="{Binding Path=Hglatte}" Margin="39,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
                 <Image HorizontalAlignment="Right" Margin="0,163,11,0" Source="/img/Icon Arrow 2.png" Width="34"/>
                 <Button Width="34" HorizontalAlignment="Right" Margin="0,163,11,0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="34" Click="Button_Click">
                     
@@ -69,7 +69,7 @@
             <Grid Width="181" Height="239" VerticalAlignment="Top" HorizontalAlignment="Right">
                 <Border Width="181" Height="239" Background="#FF202020" CornerRadius="20, 20, 20, 20"/>
                 <Grid Width="163" Margin="9,10,9,0" VerticalAlignment="Top">
-                    <Image Source="/img/Drink Image 2.png" ></Image>
+                    <Image x:Name="cppImg" Source="{Binding Path=Name}" ></Image>
                     <Image Source="/img/Icon Rating.png" Width="41" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="9,6,0,0"></Image>
                     <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
                     </Button>
@@ -78,10 +78,10 @@
                     </Button>
                 </Grid>
 
-                <TextBlock Foreground="#FFB87651" FontFamily="Mada" FontWeight="Medium" FontSize="20" Text="Cappucino" Margin="11,171,0,0" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98"/>
-                <TextBlock Foreground="White" Width="73" Height="15" FontFamily="Poppins" Text="with chocolate" FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,192,0,0" FontWeight="Light"></TextBlock>
-                <TextBlock Foreground="#FFB87651" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="IDR." Margin="12,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <TextBlock Foreground="White" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="20.000" Margin="39,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+                <TextBlock x:Name="cappuncino" Foreground="#FFB87651" FontFamily="Mada" FontWeight="Medium" FontSize="20" Text="{Binding Path=Cappucino}" Margin="11,171,0,0" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Width="99"/>
+                <TextBlock x:Name="descpp" Foreground="White" Width="73" Height="15" FontFamily="Poppins" Text="{Binding Path=Descpp}" FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,192,0,0" FontWeight="Light"></TextBlock>
+                <TextBlock Foreground="#FFB87651" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="IDR " Margin="12,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBlock x:Name="hgcpp" Foreground="White" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="{Binding Path=Hgcpp}" Margin="39,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
                 <Image HorizontalAlignment="Right" Margin="0,163,11,0" Source="/img/Icon Arrow 2.png" Width="34"/>
 
                 <Button Width="34" HorizontalAlignment="Right" Margin="0,163,11,0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="34">
@@ -91,20 +91,19 @@
             <Grid Width="181" Height="239" VerticalAlignment="Bottom" HorizontalAlignment="Left">
                 <Border Width="181" Height="239" Background="#FF202020" CornerRadius="20, 20, 20, 20"/>
                 <Grid Width="163" Margin="9,10,9,0" VerticalAlignment="Top">
-                    <Image Source="/img/Drink Image 3.png" >
+                    <Image x:Name="espImg" Source="{Binding Path=Name}">
                     </Image><Image Source="/img/Icon Rating.png" Width="41" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="9,6,0,0"></Image>
-                    <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
-                    </Button>
+                    
                     <Image Width="44" Height="44" HorizontalAlignment="Right" Margin="0,3,6,0" VerticalAlignment="Top" Source="/img/Icon Love 2.png"></Image>
                     <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Width="44" Height="44" HorizontalAlignment="Right" Margin="0,3,6,0" VerticalAlignment="Top">
                     </Button>
                     
                 </Grid>
 
-                <TextBlock Foreground="#FFB87651" FontFamily="Mada" FontWeight="Medium" FontSize="20" Text="Espresso" Margin="11,171,0,0" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76"/>
-                <TextBlock Foreground="White" Width="73" Height="15" FontFamily="Poppins" Text="arabica coffee" FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,192,0,0" FontWeight="Light"></TextBlock>
-                <TextBlock Foreground="#FFB87651" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="IDR." Margin="12,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <TextBlock Foreground="White" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="18.000" Margin="39,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+                <TextBlock x:Name="espresso" Foreground="#FFB87651" FontFamily="Mada" FontWeight="Medium" FontSize="20" Text="{Binding Path=Espresso}" Margin="11,171,0,0" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76"/>
+                <TextBlock x:Name="desesp"  Foreground="White" Width="73" Height="15" FontFamily="Poppins" Text="{Binding Path=Desesp}" FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,192,0,0" FontWeight="Light"></TextBlock>
+                <TextBlock Foreground="#FFB87651" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="IDR " Margin="12,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBlock x:Name="hgesp"  Foreground="White" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="{Binding Path=Hgesp}" Margin="39,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
                 <Image Source="/img/Icon Arrow 2.png" Width="34" HorizontalAlignment="Right" Margin="0,163,11,0"/>
 
                 <Button Width="34" HorizontalAlignment="Right" Margin="0,163,11,0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="34">
@@ -114,19 +113,17 @@
             <Grid Width="181" Height="239" VerticalAlignment="Bottom" HorizontalAlignment="Right">
                 <Border Width="181" Height="239" Background="#FF202020" CornerRadius="20, 20, 20, 20"/>
                 <Grid Width="163" Margin="9,10,9,0" VerticalAlignment="Top">
-                    <Image Source="/img/Drink Image 4.png" ></Image>
+                    <Image x:Name="lattartImg" Source="{Binding Path=Name}" ></Image>
                     <Image Source="/img/Icon Rating.png" Width="41" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="9,6,0,0"></Image>
-                    <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
-                    </Button> 
                     <Image Width="44" Height="44" HorizontalAlignment="Right" Margin="0,3,6,0" VerticalAlignment="Top" Source="/img/Icon Love 3.png"></Image>
                     <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Width="44" Height="44" HorizontalAlignment="Right" Margin="0,3,6,0" VerticalAlignment="Top">
                     </Button>
                 </Grid>
 
-                <TextBlock Foreground="#FFB87651" FontFamily="Mada" FontWeight="Medium" FontSize="20" Text="Latte Art" Margin="11,171,0,0" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76"/>
-                <TextBlock Foreground="White" Width="73" Height="15" FontFamily="Poppins" Text="with fresh milk" FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,192,0,0" FontWeight="Light"></TextBlock>
-                <TextBlock Foreground="#FFB87651" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="IDR." Margin="12,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <TextBlock Foreground="White" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="20.000" Margin="39,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
+                <TextBlock x:Name="lattart"  Foreground="#FFB87651" FontFamily="Mada" FontWeight="Medium" FontSize="20" Text="{Binding Path=LatteArt}" Margin="11,171,0,0" Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76"/>
+                <TextBlock x:Name="deslattart" Foreground="White" Width="73" Height="15" FontFamily="Poppins" Text="{Binding Path=Deslatte}" FontSize="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,192,0,0" FontWeight="Light"></TextBlock>
+                <TextBlock Foreground="#FFB87651" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="IDR " Margin="12,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBlock x:Name="hglattart" Foreground="White" FontSize="14" FontFamily="Inter" FontWeight="Medium" Text="{Binding Path=Hglatte}" Margin="39,206,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"></TextBlock>
                 <Image HorizontalAlignment="Right" Margin="0,163,11,0" Source="/img/Icon Arrow 2.png" Width="34"/>
                 <Button Width="34" HorizontalAlignment="Right" Margin="0,163,11,0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="34">
                     

@@ -26,7 +26,7 @@ namespace Sowan_Coffee
         {
             InitializeComponent();
         }
-        SqlConnection db = new SqlConnection(@"Data Source=ACER\SQLEXPRESS01;Initial Catalog=sowan_coffee;Integrated Security=True");
+        SqlConnection db = new SqlConnection(@"Data Source=FARLLS\SQLEXPRESS;Initial Catalog=sowan_coffee_backup;Integrated Security=True");
 
         private void BtnClick6(object sender, RoutedEventArgs e)
         {
