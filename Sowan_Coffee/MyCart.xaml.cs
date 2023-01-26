@@ -24,7 +24,6 @@ namespace Sowan_Coffee
         {
             InitializeComponent();
         }
-
         private void BtnClick11(object sender, RoutedEventArgs e)
         {
             this.NavigationMyCart.Navigate(new Uri("HomePage.xaml", UriKind.Relative));

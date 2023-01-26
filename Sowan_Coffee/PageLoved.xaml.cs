@@ -37,6 +37,7 @@ namespace Sowan_Coffee
                 }
                 using (SqlCommand command = new SqlCommand("SELECT deskripsi FROM [dbo].[MenuCoffee] WHERE ID_MenuCoffee = 'D0001'", db))
                 {
+
                     string Deslatte = (string)command.ExecuteScalar();
                     deslatte.Text = Deslatte;
                 }
@@ -224,6 +225,11 @@ namespace Sowan_Coffee
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationPageLoved.Navigate(new Uri("DeskripsiPage.xaml", UriKind.Relative));
+        }
+
+        private void BtnCart(object sender, RoutedEventArgs e)
+        {
+            this.NavigationPageLoved.Navigate(new Uri("MyCart.xaml", UriKind.Relative));
         }
     }
 }

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
-using System.IO;
+using System.IO; 
 
 namespace Sowan_Coffee
 {
@@ -25,16 +25,25 @@ namespace Sowan_Coffee
         public DeskripsiPage()
         {
             InitializeComponent();
+            
         }
-
+        
+        SqlConnection db = new SqlConnection(@"Data Source=FARLLS\SQLEXPRESS;Initial Catalog=sowan_coffee_backup;Integrated Security=True");
+        
         private void BtnClickAtc(object sender, RoutedEventArgs e)
         {
-            SqlConnection db = new SqlConnection(@"Data Source=FARLLS\SQLEXPRESS;Initial Catalog=sowan_coffee_backup;Integrated Security=True");
             db.Open();
-            using (SqlCommand command = new SqlCommand("SELECT deskripsi FROM [dbo].[MenuCoffee] WHERE ID_MenuCoffee = 'D0001'", db))
+            SqlCommand command = new SqlCommand("SELECT nama,harga,Img FROM [dbo].[MenuCoffee] WHERE ID_MenuCoffee = 'D0001'", db);
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
             {
-                string Deslatte = (string)command.ExecuteScalar();
-                deslatte.Text = Deslatte;
+                AddMenu addmenu = new AddMenu
+                {
+                    Nama = reader["nama"].ToString(),
+                    Harga = Convert.ToString(reader["harga"]),
+                    Image = (byte[])reader["Img"]
+                };
+                
             }
             this.NavigationDeskripsiDrink.Navigate(new Uri("MyCart.xaml", UriKind.Relative));
         }

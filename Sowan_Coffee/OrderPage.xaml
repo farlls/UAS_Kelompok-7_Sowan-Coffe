@@ -15,9 +15,7 @@
         </DockPanel>
         <Grid Width="210" Height="29" HorizontalAlignment="Left" Margin="31,42,0,0">
             <Image HorizontalAlignment="Left" Source="/img/Icon Arrow 3.png" Width="24" Height="21"></Image>
-            <Button  Width="31" Height="26" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" HorizontalAlignment="Left">
-                >
-            </Button>
+            <Button Height="26" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Margin="0,2,179,1" Click="Button_Click"/>
             <TextBlock Width="67" HorizontalAlignment="Right" FontFamily="Inter" FontWeight="SemiBold" FontSize="24" Text="Order" Foreground="White"></TextBlock>
         </Grid>
         <Grid Margin="0,22,0,0" Width="312" Height="45">
@@ -26,10 +24,10 @@
 
             </Button>
         </Grid>
-        
-        <Image Source="/img/Background Deskripsi.png" Width="310" Margin="0,11,0,0" />
+
+        <Image Source="/img/Order Summary.png" Width="310" Margin="0,11,0,0" />
         <Button materialDesign:ButtonAssist.CornerRadius="15" Width="356" Height="61" HorizontalAlignment="Center" Margin="0,25,0,0" Background="#FF693D21" BorderBrush="{x:Null}" Foreground="White" FontFamily="Inter" FontSize="24" FontWeight="Bold" Content="Purchase" Click="BtnClickPay">
-            
+
         </Button>
 
     </StackPanel>

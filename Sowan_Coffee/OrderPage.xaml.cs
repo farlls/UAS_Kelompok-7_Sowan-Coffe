@@ -29,5 +29,10 @@ namespace Sowan_Coffee
         {
             this.NavigationOrderPage.Navigate(new Uri("TranscationPage.xaml", UriKind.Relative));
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationOrderPage.Navigate(new Uri("MyCart.xaml", UriKind.Relative));
+        }
     }
 }
