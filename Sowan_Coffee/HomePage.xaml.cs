@@ -12,17 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
 
 namespace Sowan_Coffee
 {
     /// <summary>
     /// Interaction logic for HomePage.xaml
-    /// </summary>
+    /// </summary>z
     public partial class HomePage : Page
     {
         public HomePage()
         {
             InitializeComponent();
+           
         }
 
         private void BtnClick7(object sender, RoutedEventArgs e)
@@ -33,6 +35,46 @@ namespace Sowan_Coffee
         private void BtnClick9(object sender, RoutedEventArgs e)
         {
             this.NavigationHomePage.Navigate(new Uri("MyCart.xaml", UriKind.Relative));
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationHomePage.Navigate(new Uri("PageLoved.xaml", UriKind.Relative));
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.NavigationHomePage.Navigate(new Uri("PageLoved.xaml", UriKind.Relative));
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.NavigationHomePage.Navigate(new Uri("PageLoved.xaml", UriKind.Relative));
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            this.NavigationHomePage.Navigate(new Uri("PageLoved.xaml", UriKind.Relative));
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            this.NavigationHomePage.Navigate(new Uri("PageLovedFood.xaml", UriKind.Relative));
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            this.NavigationHomePage.Navigate(new Uri("PageLovedFood.xaml", UriKind.Relative));
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            this.NavigationHomePage.Navigate(new Uri("PageLovedFood.xaml", UriKind.Relative));
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            this.NavigationHomePage.Navigate(new Uri("PageLovedFood.xaml", UriKind.Relative));
         }
     }
 }

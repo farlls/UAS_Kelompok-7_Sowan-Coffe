@@ -1,65 +1,37 @@
 ﻿<Page x:Class="Sowan_Coffee.SignIn"
+     
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:Sowan_Coffee"
       mc:Ignorable="d" 
       d:DesignHeight="844" d:DesignWidth="390"
       Title="SignIn" Height="844" Width="390" MaxWidth="390" MaxHeight="844" MinWidth="390" MinHeight="844" Background="#FF0C0F14">
+
+
     <StackPanel >
         <DockPanel>
             <Frame x:Name="NavigationSignIn" NavigationUIVisibility="Hidden" />
         </DockPanel>
-        <Image Source="/img/Logo2.png" Width="236" Height="53" Margin="0,170,0,0" HorizontalAlignment="Center"></Image>
+        <Image Source="/img/Logo2.png" Width="236" Height="53" Margin="77,150,77,0" HorizontalAlignment="Center"/>
         <TextBlock Text="Sign In" Foreground="White" FontFamily="Poppins" FontSize="20" FontWeight="Medium" Width="68" Margin="68,50,0,0" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Grid  Width="270" Height="59">
-            <TextBox Height="49" Background="Transparent" Foreground="#FFBEBEBE" Width="270" Margin="0,10,0,0" TextChanged="TextBox_TextChanged">
-                <TextBox.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="15"/>
-                    </Style>
-                </TextBox.Resources>
-            </TextBox>
-            <TextBlock Margin="29,9,143,0" Height="21" Padding="0" FontFamily="Poppins" FontSize="14" FontWeight="Medium" Text="No.Hp / Email" Foreground="#FF83868B"/>
-        </Grid>
-
-        <Grid  Width="270" Height="59">
-            <TextBox Height="49" Background="Transparent" Foreground="#FFBEBEBE" Width="270" Margin="0,10,0,0">
-                <TextBox.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="15"/>
-                    </Style>
-                </TextBox.Resources>
-            </TextBox>
-            <TextBlock Margin="29,24,171,15" Height="21" Padding="0" FontFamily="Poppins" FontSize="14" FontWeight="Medium" Text="Password" Foreground="#FF83868B"/>
-        </Grid>
-        <Button Content="Sign In" Width="270" Height="49" Margin="0,29,0,0" Foreground="White" BorderBrush="#00707070" Background="#FF693D21" FontFamily="Poppins" FontSize="14" FontWeight="Medium" Click="BtnClick3">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="15"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Grid Width="266" Height="21" Margin="0,10,0,0">
+        
+        
+        <TextBox Margin="60,20" x:Name="txtemail" Width="270" FontFamily="Poppins" FontSize="14" materialDesign:HintAssist.Hint="Email" BorderThickness="1" Style="{DynamicResource MaterialDesignOutlinedTextBox}" Foreground="#FF0C0F14" Background="White" Height="54">
+        </TextBox>
+        <PasswordBox  Margin="60,-5,60,5" x:Name="txtpassword" Width="270" FontFamily="Poppins" FontSize="14" materialDesign:HintAssist.Hint="Password" BorderThickness="1" Style="{DynamicResource MaterialDesignOutlinedPasswordBox}" Foreground="#FF0C0F14" Background="White" Height="54"/>
+        
+        <Button x:Name="txtsignin" Content="Sign In" Width="270" Height="55" Margin="60,10,60,0" Foreground="White" BorderBrush="#00707070" Background="#FF693D21" FontFamily="Poppins" 
+                FontSize="18" FontWeight="Medium" Click="BtnSignIn" Style="{StaticResource MaterialDesignFlatMidBgButton}" materialDesign:ShadowAssist.ShadowDepth="Depth0" materialDesign:ButtonAssist.CornerRadius="15"/>
+        <Grid Width="266" Height="21"  Margin="62,10,62,0">
             <Rectangle Fill="#A0A0A0" HorizontalAlignment="Left" Height="2" Width="121"/>
-            <TextBlock FontFamily="Poppins" FontSize="14" FontWeight="Medium" Text="OR" HorizontalAlignment="Center" Foreground="#FFA0A0A0"></TextBlock>
+            <TextBlock FontFamily="Poppins" FontSize="14" FontWeight="Medium" Text="OR" HorizontalAlignment="Center" Foreground="#FFA0A0A0"/>
             <Rectangle Fill="#A0A0A0" HorizontalAlignment="Right" Height="2" Width="121"/>
         </Grid>
-        <Grid  Width="270" Height="59">
-            <TextBox Height="49" Background="Transparent" Foreground="#FFBEBEBE" Width="270" Margin="0,10,0,0">
-                <TextBox.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="15"/>
-                    </Style>
-                </TextBox.Resources>
-            </TextBox>
-            <Image Source="/img/google 1.png" Width="26" Height="26" Margin="36,22,0,11" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
-            <TextBlock Margin="72,25,77,13" Height="21" Padding="0" FontFamily="Poppins" FontSize="14" FontWeight="Medium" Text="Sign With Google" Foreground="#FF83868B" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        </Grid>
-        <Grid Height="21" Margin="0,50,0,0" Width="184">
-            <TextBlock Height="21" FontFamily="Poppins" FontSize="14" FontWeight="Medium" Text="have an account?" Foreground="Gray" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Button Height="24" FontFamily="Poppins" FontSize="14" FontWeight="Medium" Foreground="#FF693D21" Margin="0,-2,-1,-1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Sign Up" BorderBrush="#00707070" Background="#00DDDDDD" Width="57" Click="BtnClick4"/>
+        <Grid Margin="0,10,0,0">
+            <Button x:Name="txtsignup" Content="Sign Up" Width="270" Height="55" Foreground="White" BorderBrush="#FFBEBEBE" FontFamily="Poppins" FontSize="18" FontWeight="Medium" Click="BtnSignUp" Style="{StaticResource MaterialDesignFlatMidBgButton}" materialDesign:ShadowAssist.ShadowDepth="Depth0" materialDesign:ButtonAssist.CornerRadius="15" Background="{x:Null}" Margin="6,0,0,0" />
         </Grid>
 
     </StackPanel>

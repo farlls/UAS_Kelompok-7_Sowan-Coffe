@@ -17,9 +17,9 @@
             <Image HorizontalAlignment="Left" Height="218" Margin="76,156,0,0" VerticalAlignment="Top" Width="236" Source="/img/Logo.png"/>
             <Image HorizontalAlignment="Left" Height="175" Margin="109,431,0,0" VerticalAlignment="Top" Width="165" Source="/img/Background Coffee.png"/>
 
-            <Button Content="" HorizontalAlignment="Left" Height="58" Margin="173,632,0,0" VerticalAlignment="Top" Width="40" Click="BtbClick2" Foreground="#00000000" BorderBrush="#00707070">
+            <Button Content="" HorizontalAlignment="Left" Height="58" Margin="173,669,0,0" VerticalAlignment="Top" Width="40" Click="BtbClick2" Foreground="#00000000" BorderBrush="#00707070">
                 <Button.Background>
-                    <ImageBrush ImageSource="Icon Arrow.png"/>
+                    <ImageBrush ImageSource="/img/Icon Arrow.png"/>
                 </Button.Background>
             </Button>
 

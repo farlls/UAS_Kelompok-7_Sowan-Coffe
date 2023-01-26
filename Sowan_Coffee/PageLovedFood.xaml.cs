@@ -44,5 +44,15 @@ namespace Sowan_Coffee
         {
             this.NavigationPageLovedFood.Navigate(new Uri("PageLoved.xaml", UriKind.Relative));
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationPageLovedFood.Navigate(new Uri("DeskripsiPageFood.xaml", UriKind.Relative));
+        }
+
+        private void BtnCart(object sender, RoutedEventArgs e)
+        {
+            this.NavigationPageLovedFood.Navigate(new Uri("MyCart.xaml", UriKind.Relative));
+        }
     }
 }

@@ -24,5 +24,10 @@ namespace Sowan_Coffee
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigateHistory.Navigate(new Uri("HomePage.xaml", UriKind.Relative));
+        }
     }
 }
