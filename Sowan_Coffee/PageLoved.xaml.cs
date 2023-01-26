@@ -25,6 +25,7 @@ namespace Sowan_Coffee
         public PageLoved()
         {
             InitializeComponent();
+            //koneksi ke data base
             SqlConnection db = new SqlConnection(@"Data Source=FARLLS\SQLEXPRESS;Initial Catalog=sowan_coffee_backup;Integrated Security=True");
             using (db)
             {

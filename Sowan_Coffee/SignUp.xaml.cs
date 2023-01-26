@@ -26,6 +26,7 @@ namespace Sowan_Coffee
         {
             InitializeComponent();
         }
+        //koneksi ke data base
         SqlConnection db = new SqlConnection(@"Data Source=FARLLS\SQLEXPRESS;Initial Catalog=sowan_coffee_backup;Integrated Security=True");
 
         private void BtnClick6(object sender, RoutedEventArgs e)

@@ -14,7 +14,6 @@
             <Frame x:Name="NavigationPageLovedFood" NavigationUIVisibility="Hidden" />
         </DockPanel>
         <Grid Width="336" Margin="0,26,0,0">
-       
             <Image Source="/img/Icon Cart 2.png" Width="37" HorizontalAlignment="Right"></Image>
             <Button Width="37" HorizontalAlignment="Right" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="{x:Null}" Click="BtnCart"></Button>
         </Grid>

@@ -63,7 +63,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddMenu.cs" />
+    <Compile Include="Model\AddMenu.cs" />
     <Compile Include="DeskripsiPage.xaml.cs">
       <DependentUpon>DeskripsiPage.xaml</DependentUpon>
     </Compile>
@@ -97,7 +97,7 @@
     <Compile Include="TranscationPage.xaml.cs">
       <DependentUpon>TranscationPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="User.cs" />
+    <Compile Include="Model\User.cs" />
     <Page Include="DeskripsiPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
