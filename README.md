@@ -2,7 +2,7 @@
 Applikasi coffee shop dengan nama Sowan Coffee menggunakan bahasa pemrograman c# dan juga menggunaka database Sql Server
 
 # Anggota Kelompok
-1. Muhammad Andika Nugroho 21.11.4364
+1. Muhammad Andika Nugroho 21.11.4330
 2. Nanda Gilang Ramadhan 21.11.4355
 3. Farrel Shahizidan Ardantianto 21.11.4364
 4. Michael Mardiansyah 21.11.4371
