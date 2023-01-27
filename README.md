@@ -10,7 +10,7 @@ Applikasi coffee shop dengan nama Sowan Coffee menggunakan bahasa pemrograman c#
 6. Fauzi Ilham Darmawan 21.11.4394
 
 # Link PPT
-https://drive.google.com/drive/folders/1ISGgJuDJek6BoteyXXbOYNLe7RQuvE43?usp=share_link 
+https://drive.google.com/drive/folders/1ISGgJuDJek6BoteyXXbOYNLe7RQuvE43?usp=share_link
 
 # Link Figma
 https://www.figma.com/file/cYhDlYfryxSMjerYuDv3PD/UAS-Pemprogaman-Lanjut?node-id=1%3A184&t=PJQAdUvUSCAK1R1E-1
